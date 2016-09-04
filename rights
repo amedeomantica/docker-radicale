@@ -20,11 +20,11 @@ user: ^.+@(.+)\..+$
 collection: ^{0}/.+$
 permission: r
 
-# Allow authenticated user to read all collections
+# Allow authenticated user to read all collections (needed to add write too due to android app bug) 
 [allow-everyone-read]
 user: .+
 collection: .*
-permission: r
+permission: rw
 
 # Give write access to owners
 [owner-write]
