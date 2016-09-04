@@ -14,4 +14,5 @@ docker run --name radicale -p 5232:5232 -v [path_to_downloaded_configs]:/data/ra
 For Android you can download a very powerful client that can also sync contacts (import/export)
 
 1) OpenTasks before you start DavDroid
+
 2) DavDroid
