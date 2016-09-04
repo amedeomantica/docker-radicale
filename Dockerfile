@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM linuxserver/baseimage
 
 ENV DEBIAN_FRONTEND noninteractive
 
