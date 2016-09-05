@@ -3,11 +3,11 @@ FROM alpine:latest
 ENV DEBIAN_FRONTEND noninteractive
 
 ## update/upgrade
-RUN apt-get update -qq && apt-get upgrade -y -qq && \
+RUN apk update && apk upgrade && \
 ## installation
-apt-get install -y python3 python-pip && \
+apk add python3 python-pip && \
 ## cleanup
-rm -rf /var/lib/apt/lists/* && \
+apk cache clean && \
 rm -rf /tmp/* && \
 ## additional pip installation of radicale
 pip install radicale && \
