@@ -3,6 +3,8 @@
 
 docker files for radicale CalDav/CardDav server
 
+Image on http://hub.docker.com/r/rdissertori/docker-radicale
+
 #Configuration
 Make sure you download the config, passwd, rights file and modify this to your needs.
 and put them to the volume directory (see below)

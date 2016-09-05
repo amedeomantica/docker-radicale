@@ -8,7 +8,7 @@ RUN apt-get update -qq && apt-get upgrade -y -qq && \
 apt-get install -y python3 python-pip && \
 ## cleanup
 rm -rf /var/lib/apt/lists/* && \
-rm -rf /tmp/*
+rm -rf /tmp/* && \
 ## additional pip installation of radicale
 pip install radicale && \
 ## Adds a custom non root user with home directory
