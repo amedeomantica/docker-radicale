@@ -1,6 +1,3 @@
-# Config file for Radicale - A simple calendar server
-# Place it into ~/.config/radicale/config (user)
-
 [server]
 base_prefix = /
 can_skip_base_prefix = False
