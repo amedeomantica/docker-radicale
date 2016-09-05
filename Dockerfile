@@ -10,7 +10,8 @@ apk add python py-pip && \
 pip install radicale && \
 ## cleanup
 rm -rf /tmp/* && \
-## Adds a custom non root user with home directory
+## Adds a custom non root group and user with home directory
+addgroup radicale && \
 adduser -h /home/radicale -G radicale && \
 ## Create some folders and link the config
 mkdir -p /data/radicale && \
