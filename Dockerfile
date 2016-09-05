@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ## update/upgrade
 RUN apk update && apk upgrade && \
 ## installation
-apk add python3 python-pip && \
+apk add python py-pip && \
 ## cleanup
 apk cache clean && \
 rm -rf /tmp/* && \
