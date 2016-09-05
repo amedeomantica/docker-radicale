@@ -11,7 +11,7 @@ pip install radicale && \
 ## cleanup
 rm -rf /tmp/* && \
 ## Adds a custom non root user with home directory
-useradd -d /home/radicale -m radicale && \
+adduser -h /home/radicale -G radicale && \
 ## Create some folders and link the config
 mkdir -p /data/radicale && \
 mkdir -p /home/radicale/.config && \
