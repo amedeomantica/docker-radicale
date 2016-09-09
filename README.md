@@ -10,7 +10,7 @@ Make sure you download the config, passwd, rights file and modify this to your n
 and put them to the volume directory (see below)
 
 #Starting radicale
-docker run --name radicale -p 5232:5232 -v [path_to_downloaded_configs]:/data/radicale -d radicale rdissertori/docker-radicale
+docker run --name radicale -p 5232:5232 -v [path_to_downloaded_configs]:/data/radicale -d rdissertori/docker-radicale
 
 #Dav Client
 For Android you can download a very powerful client that can also sync contacts (import/export)
