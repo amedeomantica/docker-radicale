@@ -5,9 +5,9 @@ ENV DEBIAN_FRONTEND noninteractive
 ## update/upgrade
 RUN apk update && apk upgrade && \
 ## installation
-apk add python py-pip && \
+apk add python3 py-pip && \
 ## additional pip installation of radicale
-pip install radicale && \
+pip3 install radicale && \
 ## cleanup
 rm -rf /tmp/* && \
 ## Adds a custom non root group and user with home directory
